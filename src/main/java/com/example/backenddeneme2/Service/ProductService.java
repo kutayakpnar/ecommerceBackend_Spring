@@ -11,6 +11,6 @@ public interface ProductService {
 
     public List<Product> getProducts();
 
-    public Product getProductById(Integer id) throws Exception;
+    public Product getProductById(Long id) throws Exception;
 
 }

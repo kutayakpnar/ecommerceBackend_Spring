@@ -29,22 +29,10 @@ public class Cart {
             referencedColumnName = "userid")
     private User user;
 
-    @OneToMany(
-            mappedBy = "cart"
 
-    )
-
-    private List<Product> productsList;
 
     public void addProductToCart(Product product){
-        if(productsList==null){
-            productsList=new ArrayList<>();
-            productsList.add(product);
 
-        }else {
-            productsList.add(product);
-
-        }
     }
 
 

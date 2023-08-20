@@ -26,7 +26,7 @@ public class ProductServiceImp implements ProductService {
     }
 
     @Override
-    public Product getProductById(Integer id) throws Exception {
+    public Product getProductById(Long id) throws Exception {
         Optional<Product> foundProduct= productRepository.findById(id);
         if (foundProduct.isPresent()) {
             return foundProduct.get();

@@ -16,22 +16,9 @@ public class Product {
     private String productDescription;
     private Float price;
 
-    @ManyToOne(
-            cascade = CascadeType.ALL
-    )
-    @JoinColumn(
-            name="cart_id",
-            referencedColumnName = "cartId"
-    )
-    private Cart cart;
 
-    public Product(Long id,String productName,String productDescription,Float price){
-        this.id=id;
-        this.productName=productName;
-        this.productDescription=productDescription;
-        this.price=price;
 
-    }
+
 
 
 
